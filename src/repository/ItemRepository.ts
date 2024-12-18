@@ -1,9 +1,10 @@
 import { Item } from "../model/Item"; 
 
 export interface ItemRepository {
-    listarTodosItem(): void;
+
+    listarTodosItens(): void;
 	procurarPorId(id: number): void;
-	cadastrar(produto: Item): void;
-	atualizar(produto: Item): void;
+	cadastrar(item: Item): void;
+	atualizar(item: Item): void;
 	deletar(id: number): void;	
 }
